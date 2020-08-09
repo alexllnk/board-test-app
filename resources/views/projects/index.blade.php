@@ -4,7 +4,7 @@
 
     <div class="container">
         <div class="row px-3">
-            <a href="" @click.prevent="$modal.show('new-project-modal')" class="fl">Create New Project</a>
+            <a href="" @click.prevent="$modal.show('new-project-modal')" class="fl btn btn-outline-primary">Create New Project</a>
 
         </div>
         <div class="row">

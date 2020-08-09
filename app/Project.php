@@ -15,7 +15,21 @@ class Project extends Model
 
     public function path()
     {
-        return '/projects/'.$this->id;
+        return '/projects/' . $this->id;
     }
 
+    public function tasks()
+    {
+        return $this->hasMany(Task::class);
+    }
+
+    public function addTask($attr)
+    {
+        return $this->tasks()->create($attr);
+    }
+
+    public function addTasks($tasks)
+    {
+        return $this->tasks()->createMany($tasks);
+    }
 }

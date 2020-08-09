@@ -38,6 +38,7 @@ class ProjectController extends Controller
     public function store(Request $request)
     {
         $project = auth()->user()->projects()->create($this->validateRequest());
+
         if (!empty($request['tasks'])) {
             $project->addTasks($request['tasks']);
         }

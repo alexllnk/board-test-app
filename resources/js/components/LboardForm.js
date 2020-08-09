@@ -1,4 +1,4 @@
-class EboardForm {
+class LboardForm {
     constructor(data) {
         this.originalData = JSON.parse(JSON.stringify(data));
         Object.assign(this, data);
@@ -34,4 +34,4 @@ class EboardForm {
     }
 }
 
-export default EboardForm;
+export default LboardForm;
